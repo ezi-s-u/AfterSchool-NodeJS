@@ -15,7 +15,7 @@ app.post("/calc1/:num1/:num2", (req, res) => { // :는 변수로 취급하라는
 
 // POST /clac2?num1=100&num2=200 - ?로 시작해서 &로 이어붙이기
 // db에서 where절에 붙는 조건문이 들어감
-// 데이터를 "쿼ㅅ리스트링"을 통해서 보내기 (쇼핑몰에서 조건같은 거로 거를 때)
+// 데이터를 "쿼리스트링"을 통해서 보내기 (쇼핑몰에서 조건같은 거로 거를 때)
 app.post("/calc2", (req, res) => { // :는 변수로 취급하라는 것
   const num1 = +req.query.num1
   const num2 = +req.query.num2
